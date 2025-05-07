@@ -1,0 +1,140 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically for mobile view */
+  height: 100vh; /* Full viewport height */
+}
+
+/* Header Section - Navigation Bar */
+header {
+  background-color: #333;
+  color: white;
+  padding: 15px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center; /* Center navigation links horizontally */
+  list-style-type: none;
+  width: 100%;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+/* Hero Section - Main Introduction */
+.hero {
+  background-color: lightblue;
+  padding: 40px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+}
+
+/* Main Content Section */
+.main-content {
+  padding: 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.main-content h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.main-content p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Footer Section */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Mobile Styles (max-width 600px) */
+@media (max-width: 600px) {
+  body {
+    flex-direction: column; /* Stack elements vertically for mobile */
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack navigation links vertically */
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .main-content h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Tablet Styles (min-width 601px and max-width 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  body {
+    flex-direction: row; /* Arrange elements horizontally for tablet */
+    flex-wrap: wrap; /* Allow wrapping of elements */
+  }
+
+  nav ul {
+    flex-direction: row; /* Keep navigation links horizontal for tablet */
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .main-content h2 {
+    font-size: 1.75rem;
+  }
+}
+
+/* Desktop Styles (min-width 1025px) */
+@media (min-width: 1025px) {
+  body {
+    flex-direction: row; /* Horizontal layout for desktop */
+    justify-content: space-between; /* Space elements out horizontally */
+  }
+
+  nav ul {
+    flex-direction: row; /* Keep navigation links horizontal for desktop */
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .main-content h2 {
+    font-size: 2rem;
+  }
+}
